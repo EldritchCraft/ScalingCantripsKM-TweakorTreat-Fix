@@ -1,3 +1,7 @@
+# TweakOrTreat-Fix
+Loads the mod after Call of the Wilds mods +TweakOrTreat to prevent a mod-breaking conflict with Ancient LoreKeeper's ability to convert Cantrips into Level 1 spells. This prevents Siegebreaker and Ancient Lorekeeper from disappearing in the class selection menu.
+
+
 # Scaling Cantrips: Kingmaker
 This is a backport of the <a href="https://github.com/RealityMachina/Scaling-Cantrips">Scaling-Cantrips</a> mod for Wrath of the Righteous to Kingmaker. It should be able to work with both existing saves and new games, however once installed to a save it cannot be removed.
 
