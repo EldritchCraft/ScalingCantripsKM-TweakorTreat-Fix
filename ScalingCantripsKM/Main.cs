@@ -68,7 +68,8 @@ namespace ScalingCantripsKM
 
         [HarmonyPatch(typeof(LibraryScriptableObject), "LoadDictionary")]
         [HarmonyPatch(typeof(LibraryScriptableObject), "LoadDictionary", new Type[] { })]
-        [HarmonyAfter("CallOfTheWild")]
+        //Loads the mod after TweakOrTreat to prevent a mod-breaking conflict with Ancient LoreKeeper's ability to convert Cantrips into Level 1 spells.
+        [HarmonyAfter("CallOfTheWild", "TweakOrTreat", "RacesUnleashed", "DerringDo", "ZFavoredClass")]
         static class LibraryScriptableObject_LoadDictionary_Patch
         {
             public static bool hasRun = false;
